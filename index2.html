@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Launching Soon - WanderTrade</title>
+
+    <style>
+
+        /* Body and page background */
+
+        body {
+
+            margin: 0;
+
+            padding: 0;
+
+            height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background-image: url('universe-bg2.jpg'); /* Replace with your background image */
+
+            background-size: cover;
+
+            background-position: center;
+
+            font-family: Arial, sans-serif;
+
+            color: white;
+
+            text-align: center;
+
+        }
+
+
+        /* Main frame container */
+
+        .frame {
+
+            padding: 30px;
+
+            border: 4px solid #3498db; /* Blue border */
+
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+
+            border-radius: 15px; /* Optional rounded corners */
+
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Optional shadow */
+
+            max-width: 90%;
+
+            width: 600px;
+
+            opacity: 0;
+
+            animation: fadeIn 3s forwards;
+
+        }
+
+
+        /* FadeIn Animation */
+
+        @keyframes fadeIn {
+
+            0% {
+
+                opacity: 0;
+
+                transform: translateY(50px);
+
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+        /* Main title animation */
+
+        h1 {
+
+            font-size: 50px;
+
+            animation: slideIn 2s forwards;
+
+            animation-delay: 1s; /* Delay the h1 animation */
+
+        }
+
+
+        /* Slide in animation for the title */
+
+        @keyframes slideIn {
+
+            0% {
+
+                transform: translateX(-100%);
+
+            }
+
+            100% {
+
+                transform: translateX(0);
+
+            }
+
+        }
+
+
+        /* Subheading animation */
+
+        p {
+
+            font-size: 24px;
+
+            animation: slideIn 2s forwards;
+
+            animation-delay: 2s; /* Delay the paragraph animation */
+
+        }
+
+
+        /* Animations for each element (you can add more) */
+
+        .cta {
+
+            margin-top: 20px;
+
+            font-size: 18px;
+
+            animation: fadeIn 2s forwards;
+
+            animation-delay: 3s; /* Delay the call to action */
+
+        }
+
+
+        /* Responsive text size */
+
+        @media (max-width: 600px) {
+
+            h1 {
+
+                font-size: 36px;
+
+            }
+
+
+            p {
+
+                font-size: 20px;
+
+            }
+
+
+            .cta {
+
+                font-size: 16px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="frame">
+
+        <h1>Launching Soon</h1>
+
+        <p>We are preparing something exciting for you!</p>
+
+        <div class="cta">
+
+            <p>Stay tuned. We’ll be live soon!</p>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
